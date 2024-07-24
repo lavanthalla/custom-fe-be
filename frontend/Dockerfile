@@ -1,5 +1,5 @@
 FROM node:14
-WORKDIR /public
+WORKDIR /
 COPY package*.json ./
 RUN npm install
 COPY . .
