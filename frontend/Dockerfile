@@ -1,8 +1,8 @@
 FROM node:14
 WORKDIR /
-COPY package*.json ./
+COPY frontend/package*.json ./
 RUN npm install
 COPY . .
-RUN npm start
+CMD ["npm", "start"]
 
 
